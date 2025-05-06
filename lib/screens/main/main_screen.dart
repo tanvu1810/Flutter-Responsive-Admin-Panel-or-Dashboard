@@ -1,3 +1,4 @@
+import 'package:admin/screens/dashboard/dashboard_screen.dart';
 import 'package:admin/screens/main/components/side_menu.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
@@ -8,6 +9,7 @@ class MainScreen extends StatelessWidget {
     return Scaffold(
       body: SafeArea(
         child: Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Expanded(
               /// Default flex = 1
@@ -17,9 +19,7 @@ class MainScreen extends StatelessWidget {
             Expanded(
               /// Phần tử thứ hai chiếm 5 phần tức là 5/6 tổng số các phần
               flex: 5,
-              child: Container(
-                color: Colors.blue,
-              ),
+              child: DashboardScreen()
             )
           ],
         ),
