@@ -1,6 +1,7 @@
 import 'package:admin/constants.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+
 class Header extends StatelessWidget {
   const Header({
     super.key,
@@ -36,12 +37,11 @@ class ProfileCard extends StatelessWidget {
       padding: EdgeInsets.symmetric(
           horizontal: defaultPadding, vertical: defaultPadding / 2),
       decoration: BoxDecoration(
-        color: secondaryColor,
-        borderRadius: BorderRadius.all(
-          Radius.circular(10),
-        ),
-        border: Border.all(color: Colors.white12)
-      ),
+          color: secondaryColor,
+          borderRadius: BorderRadius.all(
+            Radius.circular(10),
+          ),
+          border: Border.all(color: Colors.white12)),
       child: Row(
         children: [
           Image.asset(
@@ -67,30 +67,29 @@ class SearchField extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return TextField(
-      
       decoration: InputDecoration(
         hintText: 'Search',
-          fillColor: secondaryColor,
-          filled: true,
-          border: OutlineInputBorder(
-            
-            borderRadius: BorderRadius.all(
-              Radius.circular(10),
-            ),
-            borderSide: BorderSide.none,
+        fillColor: secondaryColor,
+        filled: true,
+        border: OutlineInputBorder(
+          borderRadius: BorderRadius.all(
+            Radius.circular(10),
           ),
-          suffixIcon: InkWell(
-            onTap: () {},
-            child: Container(
-              padding: EdgeInsets.all(defaultPadding * 0.75),
-              margin: EdgeInsets.symmetric(horizontal: defaultPadding / 2),
-              decoration: BoxDecoration(
-                color: primaryColor,
-                borderRadius: BorderRadius.all(Radius.circular(10)),
-              ),
-              child: SvgPicture.asset('assets/icons/Search.svg'),
+          borderSide: BorderSide.none,
+        ),
+        suffixIcon: InkWell(
+          onTap: () {},
+          child: Container(
+            padding: EdgeInsets.all(defaultPadding * 0.75),
+            margin: EdgeInsets.symmetric(horizontal: defaultPadding / 2),
+            decoration: BoxDecoration(
+              color: primaryColor,
+              borderRadius: BorderRadius.all(Radius.circular(10)),
             ),
-          )),
+            child: SvgPicture.asset('assets/icons/Search.svg'),
+          ),
+        ),
+      ),
     );
   }
 }
