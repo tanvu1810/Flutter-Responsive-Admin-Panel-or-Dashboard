@@ -59,5 +59,5 @@ List<PieChartSectionData> pieCharSectiontDatas = [
       radius: 13,
       color: primaryColor.withValues(alpha: 0.1),
       value: 25,
-      showTitle: false),
+      showTitle: false)
 ];

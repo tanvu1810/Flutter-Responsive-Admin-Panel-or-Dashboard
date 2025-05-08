@@ -1,11 +1,7 @@
 import 'package:admin/constants.dart';
-import 'package:admin/screens/dashboard/components/chart.dart';
 import 'package:admin/screens/dashboard/components/header.dart';
 import 'package:admin/screens/dashboard/components/storage_details.dart';
-import 'package:admin/screens/dashboard/components/storage_infor_card.dart';
-import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 
 class DashboardScreen extends StatelessWidget {
   const DashboardScreen({super.key});
