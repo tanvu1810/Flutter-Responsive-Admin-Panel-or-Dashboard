@@ -15,10 +15,10 @@ class Chart extends StatelessWidget {
         children: [
           PieChart(
             PieChartData(
-                sections: pieCharSectiontDatas,
-                startDegreeOffset: -90,
-                sectionsSpace: 0,
-                centerSpaceRadius: 70),
+                sections: pieCharSectiontDatas, // Danh sách các phần của biểu đồ
+                startDegreeOffset: -90, // Tọa độ của biểu đồ
+                sectionsSpace: 0, // Khoảng cách giữa các phần của biểu đồ
+                centerSpaceRadius: 70), // Khoảng cách từ tâm đường tròn đến viềnviền
           ),
           Positioned.fill(
             child: Column(
