@@ -45,9 +45,10 @@ class Chart extends StatelessWidget {
     );
   }
 }
-
+// Dữ liệu của biểu đồđồ
 List<PieChartSectionData> pieCharSectiontDatas = [
   PieChartSectionData(
+    
       radius: 25, color: primaryColor, value: 25, showTitle: false),
   PieChartSectionData(
       radius: 22, color: Color(0xFF26E5FF), value: 20, showTitle: false),
@@ -56,8 +57,8 @@ List<PieChartSectionData> pieCharSectiontDatas = [
   PieChartSectionData(
       radius: 16, color: Color(0xFFEE2727), value: 15, showTitle: false),
   PieChartSectionData(
-      radius: 13,
-      color: primaryColor.withValues(alpha: 0.1),
-      value: 25,
-      showTitle: false)
+      radius: 13, // Giá trị của vòng tròn
+      color: primaryColor.withValues(alpha: 0.1), 
+      value: 25, 
+      showTitle: false // Hiện thị gía trị)
 ];
