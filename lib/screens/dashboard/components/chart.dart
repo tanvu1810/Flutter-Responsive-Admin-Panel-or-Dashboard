@@ -60,5 +60,5 @@ List<PieChartSectionData> pieCharSectiontDatas = [
       radius: 13, // Giá trị của vòng tròn
       color: primaryColor.withValues(alpha: 0.1), 
       value: 25, 
-      showTitle: false // Hiện thị gía trị)
+      showTitle: false) // Hiện thị gía trị
 ];
