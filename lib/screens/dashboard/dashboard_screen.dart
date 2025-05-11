@@ -20,6 +20,7 @@ class DashboardScreen extends StatelessWidget {
             Row(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
+                // Details files
                 Expanded(
                   flex: 5,
                   child: Container(
@@ -30,6 +31,7 @@ class DashboardScreen extends StatelessWidget {
                 SizedBox(
                   width: defaultPadding
                 ),
+                // Storage Details
                 Expanded(
                   flex: 2,
                   child: StorageDetails(),
